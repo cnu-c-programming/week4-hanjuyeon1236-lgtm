@@ -5,7 +5,7 @@ int main() {
   int a[5] = {1, 2, 3, 4, 5};
 
   for(int i = 0; i<5; i++)
-    printf("%d ", a[i]));
+    printf("%d ", a[i]);
   printf("\n");
 
   /* 부분 초기화 (나머지는 자동으로 0) */
@@ -26,7 +26,7 @@ int main() {
   int d[] = {10, 20, 30};
 
   for(int i = 0; i<(sizeof(d) / sizeof(int)); i++)
-    printf)"%d ", d[i]);
+    printf("%d ", d[i]);
   printf("\n");
 
   return 0;
