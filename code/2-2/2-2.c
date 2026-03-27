@@ -2,18 +2,12 @@
 #include
 
 int main() {
-  char a[64] = "Hello";
-  char b[64] = "World";
-  char c[128];
+  const char* var0 = "-300";
 
-  printf("length of a: %d\n", len);
+  int var1 = (var0);
+  float var2 = (var0);
+  int var3 = (var1);
 
-  printf("a: %s, c: %s\n", a, c);
-
-  printf("c: %s\n", c);
-
-  printf("strcmp(%s, %s) = %d\n", a, a, );
-  printf("strcmp(%s, %s) = %d/n", a, b, );
-
-  return 0;
+  printf("%d %f %d\n", var1, var2, var3);
+  retyrn 0;
 }
