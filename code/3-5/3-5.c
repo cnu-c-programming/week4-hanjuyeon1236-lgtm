@@ -19,7 +19,7 @@ int main() {
   my_print('C', &a);
   my_print('D', &b);
   my_print('S', c);
-  mu_print('C', c);
+  my_print('C', c);
 
   return 0;
 }
