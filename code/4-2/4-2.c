@@ -13,7 +13,7 @@ double average(int arr[], int n) {
   return (double)sum(arr, n) / n;
 }
 
-int max(int arr[] int n) {
+int max(int arr[], int n) {
   if(n <= 0) return 0;
   int m = arr[0];
   for(int i = 1; i < n; i++) {
@@ -29,7 +29,7 @@ int main() {
   int n = sizeof(arr) / sizeof(arr[0]);
 
   printf("sum: %d\n", sum(arr, n));
-  printf("avg: %.2f\n", avearge(arrm n));
+  printf("avg: %.2f\n", average(arm n));
   printf("max: %d\n", max(arr, n));
   return 0;
 }
