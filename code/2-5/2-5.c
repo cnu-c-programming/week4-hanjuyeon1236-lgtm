@@ -6,7 +6,7 @@ int main() {
   double y = 2.5;
 
   /* sqrt: 제곱근 */
-  printf(%.2f\n", sqrt(x));
+  printf("%.2f\n", sqrt(x));
   /* pow: 거듭제곱 */
   printf("%.2f\n", pow(x, y));
   /* ceil: 올림 */
