@@ -1,7 +1,15 @@
 #include <stdio.h>
 
 void my_print(char type, void* x) {
-
+  if (type == 'C') {
+    printf("%c\n", *(char*)x);
+  }
+  else if (type == 'D') {
+    printf("%d\n", *(int*)x);
+  }
+  else if(type == 'S') {
+    printf("%s\n", (char*)x);
+  }
 }
 int main() {
   int a = 0x61;
@@ -10,7 +18,7 @@ int main() {
 
   my_print('C', &a);
   my_print('D', &b);
-  my_print('5', c);
+  my_print('S', c);
   mu_print('C', c);
 
   return 0;
