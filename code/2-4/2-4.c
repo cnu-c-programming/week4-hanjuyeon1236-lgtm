@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include
+#include <ctype.h>
 
 int main() {
   char chars[] = { 'A', 'z', '5', '!', ' '};
@@ -9,10 +9,10 @@ int main() {
     char ch = chars[i];
     printf("%c - alpha:%d digit:%d uppeer:%c lower:%c\n",
         ch,
-                (ch),
-                (ch),
-                (ch),
-                (ch));
+        isalpha(ch) != 0,
+        isdigit(ch) != 0,
+        toupper(ch),
+        tolower(ch));
   }
 
   return 0;
